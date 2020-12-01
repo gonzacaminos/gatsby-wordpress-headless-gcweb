@@ -4,7 +4,7 @@ import Card from "../components/card"
 
 const ListCard = (props) => {
     return (
-        <div className="container">
+        <div className="container mb-6">
           <h4 className="is-size-4">{props.title}</h4>
 
           <div className="columns is-multiline mt-4">

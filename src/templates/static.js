@@ -8,7 +8,7 @@ const Proyect = ({ data }) => {
   return (
     <Layout seo_title={page.title}>
         <Hero classes="is-medium is-primary" title={page.title} subtitle=""/>
-        <div className="container is-max-desktop mt-6">
+        <div className="container is-max-desktop py-6">
          <div className="content" dangerouslySetInnerHTML={{__html:  page.content}} />
         </div>
     </Layout>

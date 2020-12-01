@@ -1,0 +1,9 @@
+.card {
+    &:hover {
+        background: #f4f4f4
+    }
+}
+.card_image {
+    height: 300px;
+    background-size: cover;
+}

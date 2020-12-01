@@ -6,7 +6,7 @@ import footerStyles from './footer.module.scss'
 const Footer = () => {
     const testimonial = '"Gracias al seminario de Gestión de contenidos para Web pude iniciarme en el mundo web y crecer profesionalmente"'
     return (
-        <section className="bottom  mt-6">
+        <section className="bottom">
             <div className={"test m-0 has-background-primary " + footerStyles.about}>
             <About title={testimonial} content="María B." classes="has-text-centered" />
             </div>

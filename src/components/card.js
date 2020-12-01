@@ -1,13 +1,18 @@
 import React from 'react'
+import cardStyles from './card.module.scss'
 
 const Card = (props) => {
+    const styles = {  
+        backgroundImage: "url(" + props.image + ")",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }
     return (
         <div>
-            <div className="card">
-                <div className="card-image">
-                    <figure className="image is-4by3">
-                    <img src={props.image} alt="Placeholder" />
-                    </figure>
+            <div className={"card " + cardStyles.card}>
+                <div className={"card-image " + cardStyles.card_image} style={styles}>
+                   
                 </div>
                 <div className="card-content">
                     <div className="media">

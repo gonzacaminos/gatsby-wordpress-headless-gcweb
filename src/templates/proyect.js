@@ -13,7 +13,7 @@ const Proyect = ({ data }) => {
 
     <ProyectShowcase image={image} name={post.title} desc={post.excerpt} />
 
-    <div className="mt-6">
+    <div className="py-6">
     <About title="Acerca de este proyecto" content={post.content} />
 
     </div>
