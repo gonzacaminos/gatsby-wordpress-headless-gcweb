@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 
 const Card = (props) => {
     return (
@@ -15,7 +14,6 @@ const Card = (props) => {
                    
                     <div className="media-content">
                         <p className="title is-4">{props.title}</p>
-                        <p className="subtitle is-6">{props.author}</p>
                     </div>
                     </div>
 
@@ -23,7 +21,7 @@ const Card = (props) => {
                    
                     <div dangerouslySetInnerHTML={{__html:  props.excerpt}} />
                     <br/>
-                    <small><time datetime={props.date}>{props.date}</time></small>
+                    <small>Por <strong>{props.author}</strong>. <time datetime={props.date}>{props.date}</time></small>
                     </div>
                 </div>
                 </div>

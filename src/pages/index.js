@@ -6,9 +6,8 @@ import ProyectsList from '../components/proyects-list'
 const Home = () => {
   return (
     <Layout>
-      <Hero />
-      <div className="container">
-      <h4 className="is-size-4">Proyectos recientes</h4>
+      <Hero title="Contenido hecho web" classes="is-primary is-medium" /> 
+      <div className="container-fluid mt-6">
       <ProyectsList />
 
       </div>

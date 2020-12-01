@@ -1,21 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Card from "../components/card"
+import Hero from "../components/hero"
+import Layout from "../components/layout"
+import ProyectsList from '../components/proyects-list'
 
 export default function Home({ data }) {
   return (
-      <div className="content">
-        <h1>Proyectos</h1>
-          <div className="columns">
-            {data.allWordpressPost.edges.map(({ node }) => (
-             <div className="column is-one-third">
-              <Card title={node.title} author={node.author.name}/>
-            </div>
-
-          ))}
-          </div>
-          
-      </div>      
+    <Layout seo_title="Proyectos">
+        <Hero classes="is-medium is-primary" title="Proyectos" subtitle="Trabajos realisados en marco del seminario."/>
+        <div className="container mt-5">
+         <ProyectsList />
+        </div>
+    </Layout>    
   )
 }
 

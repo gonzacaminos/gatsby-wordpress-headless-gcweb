@@ -1,0 +1,20 @@
+
+.image {
+    background-size: cover;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: #363636;
+        left: 0;
+        right: 0;
+        opacity: .8;
+    }
+}
+
+.buttons {
+    display: none;
+}

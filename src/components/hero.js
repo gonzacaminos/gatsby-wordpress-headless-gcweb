@@ -1,16 +1,27 @@
 import React from 'react'
+import heroStyles from './hero.module.scss'
 
-const Hero = () => {
+const Hero = (props) => {
+    let styles = { float: "none" } 
+    let classes = ""
+    if(props.image){
+        classes = " " + heroStyles.hasImage
+        styles = {  
+            backgroundImage: "url(" + props.image + ")",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+          }
+    }
     return (
-        <section className="hero">
-        <div className="hero-body">
+        <section className={"hero " + props.classes + classes} style={styles}>
+
+        <div className="hero-body has-text-centered has-text-white mb-6">
             <div className="container">
             <h1 className="title">
-                Contenido, hecho web
+                {props.title}
             </h1>
-            <h2 className="subtitle">
-            Este seminario se ocupa de la formación relativa al diseño y producción de sitios web, articulando tecnologías y medios necesarios para elaborar una comunicación digital interactiva en Internet.
-            </h2>
+            <h2 className="subtitle" dangerouslySetInnerHTML={{__html:  props.subtitle}} />
             </div>
         </div>
         </section>

@@ -1,0 +1,19 @@
+
+.has-image {
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: #363636;
+        left: 0;
+        right: 0;
+        opacity: .8;
+    }
+    .hero-body {
+        z-index: 999 !important;
+    }
+}
+
