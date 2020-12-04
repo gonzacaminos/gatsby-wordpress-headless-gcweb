@@ -8,12 +8,14 @@
   Gatsby + Wordpress Headless
 </h1>
 
-A small exercise using Gatsby JS + Wordpress headlessly, it is really interesting how easy is to build up a blazing fast and secure site while keeping the good old Wordpress editor for the content administrators. 
+A small exercise using Gatsby JS + Wordpress headlessly, it is really interesting to see how easy is to build up a blazing fast and secure site while keeping the good old Wordpress editor for the content managers. 
 
 This site was made for a seminar in my university: Facultad de Artes, Universidad Nacional de La Plata.
 
 To be able to run the site you will need to set up an .env.development and .env.production files with the URL (without protocol) to the Wordpress site, as follows:
 
 **WP_URL=localhost/wordpress**
+
+You can see the [ggcweb.netlify.app/](site deployed here)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
