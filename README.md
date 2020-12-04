@@ -16,6 +16,6 @@ To be able to run the site you will need to set up an .env.development and .env.
 
 **WP_URL=localhost/wordpress**
 
-You can see the [ggcweb.netlify.app/](site deployed here)
+You can see the [site deployed here](https://ggcweb.netlify.app/)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
